@@ -1,0 +1,48 @@
+$screen-width: 1920;
+@function px-to-vw($value) {
+  @return ($value * 100) / $screen-width + vw;
+}
+$shabowblack: #0000003f;
+$shabowwhite: #d8d8d8;
+.posts {
+  margin-top: px-to-vw(50);
+
+  background-color: rgb(241, 241, 241);
+  border: 1px solid rgb(211, 211, 211);
+  padding: px-to-vw(20);
+
+  .postsTitle {
+    margin-bottom: px-to-vw(10);
+    font-size: px-to-vw(40);
+  }
+  .postsForm {
+    border: 1px solid rgb(211, 211, 211);
+    border-top-right-radius: px-to-vw(20);
+    border-bottom-right-radius: px-to-vw(20);
+    margin-bottom: px-to-vw(50);
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    column-gap: px-to-vw(20);
+    .postsInput {
+      resize: none;
+      margin: 0;
+      line-height: 1;
+      background-color: inherit;
+      font-size: px-to-vw(25);
+      border: none;
+      outline: none;
+      width: 45vw;
+      font-weight: 600;
+      padding-top: px-to-vw(20);
+      padding-left: px-to-vw(30);
+    }
+    .postsBtn {
+      border-top-right-radius: px-to-vw(20);
+      border-bottom-right-radius: px-to-vw(20);
+      background-color: #26a69a;
+      padding: px-to-vw(20) px-to-vw(40);
+      font-size: px-to-vw(30);
+    }
+  }
+}

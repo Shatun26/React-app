@@ -1,0 +1,8 @@
+$screen-width: 1920;
+@function px-to-vw($value) {
+  @return ($value * 100) / $screen-width + vw;
+}
+.profileContainer{
+  margin-left: px-to-vw(290);
+  margin-top: px-to-vw(100);
+}

@@ -1,0 +1,141 @@
+.dialogs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 4fr;
+      grid-template-columns: 1fr 4fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #e9e9e9;
+  height: 100vh;
+  padding-left: 14.0625vw;
+  padding-top: 4.01042vw;
+}
+
+.dialogs .interlocutors {
+  background-color: #e2e2e2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  min-width: 20vw;
+  overflow-y: auto;
+}
+
+.dialogs .interlocutors::-webkit-scrollbar {
+  width: 0.36458vw;
+  padding: 2.60417vw;
+}
+
+.dialogs .interlocutors::-webkit-scrollbar-track {
+  background-color: #e2e2e2;
+}
+
+.dialogs .interlocutors::-webkit-scrollbar-thumb {
+  outline: none;
+  background-color: #26a69a;
+  border-radius: 5px;
+  height: 1.04167vw;
+}
+
+.dialogs .messages {
+  overflow-y: auto;
+  padding-top: 1.04167vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #1c828a;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-shadow: 10px 0px 5px -5px rgba(0, 0, 0, 0.151) inset;
+          box-shadow: 10px 0px 5px -5px rgba(0, 0, 0, 0.151) inset;
+}
+
+.dialogs .messages::-webkit-scrollbar {
+  width: 0.52083vw;
+  padding: 2.60417vw;
+}
+
+.dialogs .messages::-webkit-scrollbar-track {
+  background-color: #1c828a;
+}
+
+.dialogs .messages::-webkit-scrollbar-thumb {
+  outline: none;
+  background-color: #26a69a;
+  height: 1.04167vw;
+}
+
+.dialogs .inputBar {
+  -webkit-box-shadow: 10px 0px 5px -5px rgba(0, 0, 0, 0.151) inset;
+          box-shadow: 10px 0px 5px -5px rgba(0, 0, 0, 0.151) inset;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 5.20833vw;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 2.08333vw;
+  -webkit-column-gap: 1.04167vw;
+          column-gap: 1.04167vw;
+  background-color: #1c828a;
+}
+
+.dialogs .inputBar textarea {
+  -webkit-box-shadow: 5px 5px 8px -5px rgba(0, 0, 0, 0.384);
+          box-shadow: 5px 5px 8px -5px rgba(0, 0, 0, 0.384);
+  height: 2.60417vw;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  resize: none;
+  line-height: 1.2;
+  padding: 0.52083vw;
+  background-color: #26a69a;
+  border: none;
+  border-radius: 0.52083vw;
+  color: white;
+}
+
+.dialogs .inputBar textarea::-webkit-scrollbar {
+  display: none;
+}
+
+.dialogs .inputBar textarea::-webkit-input-placeholder {
+  color: #aad8db;
+}
+
+.dialogs .inputBar textarea:-ms-input-placeholder {
+  color: #aad8db;
+}
+
+.dialogs .inputBar textarea::-ms-input-placeholder {
+  color: #aad8db;
+}
+
+.dialogs .inputBar textarea::placeholder {
+  color: #aad8db;
+}
+
+.dialogs .inputBar button {
+  -webkit-box-shadow: 5px 5px 8px -5px rgba(0, 0, 0, 0.384);
+          box-shadow: 5px 5px 8px -5px rgba(0, 0, 0, 0.384);
+  background-color: #26a69a;
+  border-radius: 0.52083vw;
+  padding: 0.26042vw 1.04167vw;
+  color: white;
+}
+/*# sourceMappingURL=Dialogs.module.css.map */

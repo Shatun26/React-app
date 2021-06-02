@@ -1,0 +1,37 @@
+$screen-width: 1920;
+@function px-to-vw($value) {
+  @return ($value * 100) / $screen-width + vw;
+}
+
+.profileOwner {
+  display: flex;
+  column-gap: px-to-vw(30);
+  background-color: rgb(241, 241, 241);
+  border: 1px solid rgb(211, 211, 211);
+  width: fit-content;
+  padding: px-to-vw(20);
+  .avatar {
+    background-image: url(../../../../Prepare/Img/Garik.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius:50%;
+    width: px-to-vw(250);
+    height: px-to-vw(250);
+  }
+  .discription {
+    h1 {
+      line-height: 1;
+      font-size: px-to-vw(40);
+      padding-bottom: px-to-vw(20);
+      margin-top: px-to-vw(10);
+    }
+    h2,
+    h3,
+    h4,
+    h5 {
+      line-height: 180%;
+      font-size: px-to-vw(25);
+    }
+  }
+}

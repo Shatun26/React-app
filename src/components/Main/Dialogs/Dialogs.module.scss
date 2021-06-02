@@ -1,0 +1,96 @@
+$screen-width: 1920;
+@function px-to-vw($value) {
+  @return ($value * 100) / $screen-width + vw;
+}
+.dialogs {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr;
+  flex-wrap: wrap;
+  background-color: #e9e9e9;
+  height: 100vh;
+  padding-left: px-to-vw(270);
+  padding-top: px-to-vw(77);
+  .interlocutors {
+    background-color: rgb(226, 226, 226);
+    grid-row: 1/3;
+    min-width: 20vw;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      width: px-to-vw(7);
+      padding: px-to-vw(50);
+    }
+    &::-webkit-scrollbar-track {
+      background-color: rgb(226, 226, 226);
+    }
+    &::-webkit-scrollbar-thumb {
+      outline: none;
+      background-color: #26a69a;
+      border-radius: 5px;
+      height: px-to-vw(20);
+    }
+    
+  }
+  .messages {
+    &::-webkit-scrollbar {
+      width: px-to-vw(10);
+      padding: px-to-vw(50);
+    }
+    &::-webkit-scrollbar-track {
+      background-color: rgb(28, 130, 138);
+    }
+    &::-webkit-scrollbar-thumb {
+      outline: none;
+      background-color: #26a69a;
+      height: px-to-vw(20);
+    }
+    overflow-y: auto;
+    padding-top: px-to-vw(20);
+    display: flex;
+    background-color: rgb(28, 130, 138);
+    flex-direction: column;
+    justify-content: flex-end;
+    box-shadow: 10px 0px 5px -5px rgba(0, 0, 0, 0.151) inset;
+  }
+  .inputBar {
+    box-shadow: 10px 0px 5px -5px rgba(0, 0, 0, 0.151) inset;
+    grid-column: 2/3;
+    height: fit-content;
+    min-height: px-to-vw(100);
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    padding: 0 px-to-vw(40);
+    column-gap: px-to-vw(20);
+    background-color: rgb(28, 130, 138);
+    textarea {
+      box-shadow: 5px 5px 8px -5px rgba(0, 0, 0, 0.384);
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      height: px-to-vw(50);
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      resize: none;
+      line-height: 1.2;
+      padding: px-to-vw(10);
+      background-color: #26a69a;
+      border: none;
+      border-radius: px-to-vw(10);
+      color: white;
+      &::placeholder {
+        color: rgb(170, 216, 219);
+      }
+    }
+    button {
+      box-shadow: 5px 5px 8px -5px rgba(0, 0, 0, 0.384);
+
+      background-color: #26a69a;
+      border-radius: px-to-vw(10);
+      padding: px-to-vw(5) px-to-vw(20);
+      color: white;
+    }
+  }
+}

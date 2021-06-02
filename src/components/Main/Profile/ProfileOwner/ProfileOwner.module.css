@@ -1,0 +1,39 @@
+.profileOwner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 1.5625vw;
+          column-gap: 1.5625vw;
+  background-color: #f1f1f1;
+  border: 1px solid lightgray;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1.04167vw;
+}
+
+.profileOwner .avatar {
+  background-image: url(../../../../Prepare/Img/Garik.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  width: 13.02083vw;
+  height: 13.02083vw;
+}
+
+.profileOwner .discription h1 {
+  line-height: 1;
+  font-size: 2.08333vw;
+  padding-bottom: 1.04167vw;
+  margin-top: 0.52083vw;
+}
+
+.profileOwner .discription h2,
+.profileOwner .discription h3,
+.profileOwner .discription h4,
+.profileOwner .discription h5 {
+  line-height: 180%;
+  font-size: 1.30208vw;
+}
+/*# sourceMappingURL=ProfileOwner.module.css.map */

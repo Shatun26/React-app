@@ -1,0 +1,61 @@
+.ArrivedMessage {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-width: 40vw;
+  background-color: #26a69a;
+  position: relative;
+  border-radius: 0.78125vw;
+  border-bottom-left-radius: 0;
+  padding: 0.52083vw 1.04167vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.8em;
+  color: white;
+  margin-bottom: 0.52083vw;
+  margin-left: 4.6875vw;
+  -webkit-box-shadow: 5px 5px 8px -5px rgba(0, 0, 0, 0.384);
+          box-shadow: 5px 5px 8px -5px rgba(0, 0, 0, 0.384);
+}
+
+.ArrivedMessage .messageOwner {
+  position: absolute;
+  width: 2.60417vw;
+  height: 2.60417vw;
+  left: -3.64583vw;
+  bottom: 0vw;
+  z-index: 1;
+  border-radius: 100%;
+}
+
+.ArrivedMessage .messageOwner img {
+  border-radius: 100%;
+}
+
+.ArrivedMessage .messageStyleElement {
+  position: absolute;
+  width: 1.5625vw;
+  height: 1.30208vw;
+  background-color: #26a69a;
+  bottom: 0;
+  left: -1.51042vw;
+}
+
+.ArrivedMessage .messageStyleElement::after {
+  position: absolute;
+  content: '';
+  bottom: -0.52083vw;
+  left: -2.13542vw;
+  width: 3.64583vw;
+  height: 3.64583vw;
+  background-color: #1c828a;
+  border-radius: 100%;
+}
+/*# sourceMappingURL=ArrivedMessage.module.css.map */
